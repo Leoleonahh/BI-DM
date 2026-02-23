@@ -1,0 +1,7 @@
+คำสั่ง retrain POST [http://127.0.0.1:8000/retrain]
+
+คำสั่ง run api [uvicorn api:app --reload]
+
+หน่อยของ Co2 คือ MtCO₂ (Million tonnes of CO₂)
+
+model อาจจะต้องเทรนใหม่เพราะไม่สามารถอัพขึ้น git ได้เนื่องจากขนาดไฟล์ใหญ่
