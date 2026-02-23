@@ -2,6 +2,6 @@
 
 คำสั่ง run api [uvicorn api:app --reload]
 
-หน่อยของ Co2 คือ MtCO₂ (Million tonnes of CO₂)
+หน่วยของ Co2 คือ MtCO₂ (Million tonnes of CO₂)
 
-model อาจจะต้องเทรนใหม่เพราะไม่สามารถอัพขึ้น git ได้เนื่องจากขนาดไฟล์ใหญ่
+คำสั่ง run frontend [npm run dev]
