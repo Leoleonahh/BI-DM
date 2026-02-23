@@ -100,14 +100,16 @@ def get_countries():
 @app.get("/model/performance")
 def get_model_performance():
     if metrics is None:
-        raise HTTPException(status_code=404, detail="Metrics not found")
+        raise HTTPException(
+            status_code=404,
+            detail="Model performance metrics not found"
+        )
 
     return {
-        "rmse": metrics["rmse"],
-        "r2": metrics["r2"],
-        "rows": metrics.get("rows", 0)
+        "rmse": metrics.get("rmse"),
+        "r2": metrics.get("r2"),
+        "accuracy": metrics.get("accuracy")
     }
-
 # =====================
 # PREDICT
 # =====================

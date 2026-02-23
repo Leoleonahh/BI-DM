@@ -231,18 +231,25 @@ function App() {
 
         <div className="performance">
           <h3>Model Performance</h3>
+
           {loadingPerformance ? (
-            <p>Loading...</p>
+          <p>Loading metrics...</p>
           ) : performance ? (
-            <div className="metrics">
-              <div>RMSE: <strong>{performance.rmse}</strong></div>
-              <div>R²: <strong>{performance.r2}</strong></div>
-              <div>Training Rows: <strong>{performance.rows}</strong></div>
+          <div className="metrics">
+            <div className="metric">
+              RMSE: <strong>{performance.rmse}</strong>
             </div>
+            <div className="metric">
+              R²: <strong>{performance.r2}</strong>
+            </div>
+            <div className="metric">
+              Accuracy: <strong>{performance.accuracy}%</strong>
+            </div>
+          </div>
           ) : (
-            <p>No performance data</p>
-          )}
-        </div>
+    <p>No performance data</p>
+  )}
+</div>
 
       </section>
 
